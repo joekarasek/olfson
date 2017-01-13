@@ -6,31 +6,17 @@
   .heading {
     padding-top: 60px;
     padding-bottom: 30px;
-  }
-  h3 {
-    font-family: $ff-great-vibes;
-    color: $c-teal;
-    font-weight: 400;
-    margin-bottom: 0;
-    line-height: 1.5;
-    @media screen and (max-width: $width-md) {
-      color: white;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    h2 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 300;
+      color: #4A6456;
+      margin-bottom: 0;
+      line-height: 1;
     }
   }
 
-  h2 {
-    font-family: $ff-mont;
-    font-weight: 700;
-    color: $c-grey-red;
-    margin-bottom: 0;
-    line-height: 1;
-  }
 
-  hr {
-    width: 250px;
-    border-top-color: $c-grey-red;
-  }
+
 
   @include birdeye-footer();
 
