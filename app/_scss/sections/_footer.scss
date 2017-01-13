@@ -32,17 +32,18 @@
   @include social-media-link('linkedin');
 
   .flex--wrapper {
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: $width-md) {
-      flex-direction: column-reverse;
-      .social-media-links {
-        display: inline-block;
-        a {
-          float: none;
-        }
+    .text {
+      text-align: center;
+    }
+    .social-media-links {
+        float: right;
+      @media screen and (max-width: $width-md) {
+        a { float: none !important; }
+        text-align: center;
+        width: 100%;
       }
     }
+
   }
 
 }

@@ -46,7 +46,7 @@
 
   new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: false,
+    autoplay: 6000,
     loop: true,
     autoplayDisableOnInteraction: false
   });
@@ -79,40 +79,13 @@
     }
   });
 
-  $('.js-certificate-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 400,
-    autoplayTimeout: 3000,
-    autoplayHoverPause:false,
-    nav: false,
-    dots: false,
-    center: true,
-    responsive: {
-      480: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      992: {
-        items: 3
-      },
-      1200: {
-        items: 5,
-        autoplay: false
-      }
-    }
-  });
-
   $('#google-map5').gMap({
-    address: '42.2821962,-71.6443669',
+    address: '42.4501103,-123.3240179',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "42.2821962,-71.6443669"
+        address: "42.4501196,-123.3210373"
       }
     ],
     doubleclickzoom: false,
