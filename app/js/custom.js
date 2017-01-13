@@ -46,10 +46,9 @@
 
   new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: false,
+    autoplay: 6000,
     loop: true,
-    autoplayDisableOnInteraction: false,
-    slides: 3
+    autoplayDisableOnInteraction: false
   });
 
 
