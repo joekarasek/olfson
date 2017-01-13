@@ -13,6 +13,7 @@
   }
   .swiper-slide.slide3 {
     background-image: url('/assets/slide2.jpg');
+    background-position: 30%;
   }
 
   .swiper-slide .row {
@@ -20,91 +21,111 @@
   }
 
   .slide1 {
-    h3:first-child {
-      margin-bottom: 0;
-      font-family: $ff-mont;
+    text-align: center;
+    h2:first-child {
+      font-family: $ff-roboto-condensed;
       font-weight: 700;
-      color: $c-grey-red;
-    }
-    h3:nth-child(2) {
-      font-family: $ff-great-vibes;
+      color: #47607e;
       margin-bottom: 0;
-      color: $c-teal-2;
-      @include h2;
-      font-weight: 400;
     }
-    h2 {
-      @include font-size(62px, 52px, 62px, 62px, 62px);
-      color: $c-grey-red;
-      margin-bottom: 0;
+    h2:nth-child(2) {
+      font-family: $ff-roboto-condensed;
+      font-weight: 300;
+      color: #4a6456;
       line-height: 1;
+      margin-bottom: $spacing-lg;
     }
-    h1 {
-      color: $c-beige-green;
-      @include font-size(81px, 68px, 62px, 62px, 62px);
-      font-weight: 700;
+    &-well {
+      display: inline-block;
+      background-color: rgba(white, 0.65);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      border-radius: 20px;
+      margin-bottom: 45px;
+
+      .copy {
+        font-family: $ff-lato;
+        font-weight: 700;
+        color: #515151;
+        margin-bottom: 0;
+        line-height: 1;
+      }
+      .quotee {
+        font-family: $ff-lato;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #636363;
+      }
+
+      .stars {
+        h2 {
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          margin-top: -40px;
+          color: #ffd900;
+        }
+      }
     }
 
   }
   .slide2 {
-    h2{
-      @include font-size(62px, 54px, 45px, 45px, 45px);
-      font-family: $ff-great-vibes;
+    h1 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 700;
+      color: #47607e;
+      @include h2(-4);
       margin-bottom: 0;
-      color: $c-teal;
-      font-weight: 400;
       line-height: 1;
     }
-    h3{
-      font-family: $ff-mont;
-      @include font-size(42px, 38px, 38px, 38px, 38px);
-      color: $c-red-grey;
+    h2 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 300;
+      color: #4a6456;
+      margin-bottom: 0;
     }
-    hr {
-      border-top-color: $c-grey-red-2;
-      width: 200px;
-      margin-top: -20px;
-      line-height: 1;
+    &-well {
+      display: inline-block;
+      background-color: rgba(white, 0.65);
+      padding: 30px 60px;
+      border-radius: 20px;
+      margin-bottom: 100px;
     }
-    .stars {
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+    h4 {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #515151;
+      margin-bottom: 15px;
     }
-    .copy {
-      color: $c-grey-red-3;
-      font-family: $ff-open;
-      @include lr-padding(30px, 20px, 10px, 0px, 0px);
-    }
+
 
   }
   .slide3 {
     h1 {
-      color: #575757;
-      margin-bottom: 0;
+      font-family: $ff-roboto-condensed;
       font-weight: 700;
-      font-family: $ff-mont;
-      text-transform: uppercase;
-      line-height: $lh-sm;
+      color: #47607e;
+      @include h2(5w);
+      margin-bottom: 0;
+      line-height: 1;
     }
     h2 {
-      color: #3AA5CB;
-      line-height: $lh-sm;
-      font-family: $ff-great-vibes;
-      font-weight: 400;
+      font-family: $ff-roboto-condensed;
+      font-weight: 300;
+      color: #4a6456;
+      margin-bottom: 0;
     }
-    hr {
-      border-top-color: #979797;
-      width: 350px;
+    &-well {
+      display: inline-block;
+      background-color: rgba(white, 0.65);
+      padding: 30px 60px;
+      border-radius: 20px;
+      margin-bottom: 100px;
     }
-    h3 {
-      color: #71706E;
-      font-weight:400;
-      font-family: $ff-mont;
-      line-height: $lh-sm;
-      margin-bottom: $spacing-lg;
-      @include h2(2);
-    }
-    .btn {
-      @include lr-padding(80px, 60px, 60px);
+    h4 {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #515151;
+      margin-bottom: 15px;
     }
   }
 
