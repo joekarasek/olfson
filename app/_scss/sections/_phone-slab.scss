@@ -1,12 +1,22 @@
 .phone-slab {
 
-  background: radial-gradient(#ffffff, #C9CFC4);
+  &:not(.phone-slab-2) {
+    background: radial-gradient(#ffffff, #C9CFC4);
+  }
   //fix to make it transparent
 
   h6 {
     font-family: $ff-open;
     color: #4a6456;
     text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  .phone-number--lead {
+    font-size: 17px;
+    color: #4a6456;
+    font-weight: 400;
+
   }
 
   .text {
