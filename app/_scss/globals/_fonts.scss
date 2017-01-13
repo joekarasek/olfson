@@ -59,7 +59,7 @@ p {
 
 @mixin h1() {
 	@include headings();
-	@include font-size(72px, 65px, 55px, 65px, 65px);
+	@include font-size(54px, 50px, 45px, 40px, 35px);
 }
 
 .h1,
