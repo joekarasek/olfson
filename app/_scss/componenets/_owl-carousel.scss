@@ -8,7 +8,7 @@
   height: 65px;
   line-height: 32px;
   color: $c-white;
-  background-color: rgba($c-white, 0.39);
+  background-color: rgba(#5C6B7E, 1);
   font-size: 60px;
   border-radius: 0;
   opacity: 1;
@@ -52,7 +52,7 @@
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
-  background-color: rgba($c-white, 0.20) !important;
+  background-color: rgba(#5C6B7E, 1) !important;
   color: $c-white !important;
   text-decoration: none;
 }

@@ -1,5 +1,5 @@
-# Dr Stoian for Tyson Steele
-### By Joe Karasek _*12/15/16*_
+# Dr Olfson for Tyson Steele
+### By Joe Karasek _*1/17/16*_
 
 ## Setup
 

@@ -4,6 +4,7 @@
   .location-card--wrapper {
     background: rgba($c-white, 0.65);
     position: absolute;
+    border-radius: 30px;
     z-index: 10;
     width: 40%;
 
@@ -24,7 +25,7 @@
 
 .location-card {
   margin: 30px 0;
-  border-radius: 0.1px;
+  border-radius: 30px;
   font-family: $ff-lato;
   z-index: 0;
   @media (max-width: $width-md) {
@@ -62,6 +63,9 @@
     font-size: 16px;
     color: #fa9322;
   }
+  a.btn {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  }
   .phone-number {
     line-height: $lh-sm;
     color: $c-grey-red;
@@ -89,7 +93,7 @@
 }
 
 #google-map5 {
-  height: 700px;
+  height: 800px;
   @media (max-width: $width-md) {
     height: 300px;
   }

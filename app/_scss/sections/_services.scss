@@ -79,7 +79,7 @@
 }
 
 .services-carousel {
-  background-color: #cfd1ce;
+  background-color: #C9CFC4;
   .container-fluid {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -91,13 +91,17 @@
 
     &--image {
       @include hover-plus();
+      img {
+        border-radius: 30px;
+        border: solid 2px white;
+      }
     }
 
     h5 {
       text-align: center;
-      text-transform: uppercase;
-      font-family: $ff-mont;
-      font-weight: 700;
+      font-family: $ff-roboto-condensed;
+      font-weight: 400;
+      color: #536c5e;
       padding-top: 15px;
       @include font-size(18px, 14px, 15px, 14px, 14px);
     }
