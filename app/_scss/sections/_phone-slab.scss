@@ -1,22 +1,22 @@
 .phone-slab {
 
+  background: radial-gradient(#ffffff, #C9CFC4);
   //fix to make it transparent
 
-  //&:not(.phone-slab-2) {
-  //  background-color: rgba(255, 255, 255, 0.8);
-  //  bottom: 0;
-  //  position: absolute;
-  //  width: 100%;
-  //}
+  h6 {
+    font-family: $ff-open;
+    color: #4a6456;
+    text-transform: capitalize;
+  }
 
   .text {
-    font-family: $ff-mont;
-    color: $c-red-grey;
+    font-family: $ff-lato;
+    color: #4A6456;
   }
 
   .phone-number {
-    font-family: $ff-mont;
-    color: $c-red-grey;
+    font-family: $ff-roboto-condensed;
+    color: #47607E;
     font-weight: 900;
     a:hover {
       color: $c-red-grey !important;
@@ -30,6 +30,7 @@
     }
     &--sub {
       font-weight: 900;
+      color: #4a6456;
     }
   }
 
@@ -66,7 +67,7 @@
     padding-bottom: $spacing-sm;
   }
   &__left {
-    border-right: solid 2px #6c4117;
+    border-right: solid 2px #6c480c;
     text-align: right;
     margin-top: 5px;
     @media screen and (max-width: $width-md) {
