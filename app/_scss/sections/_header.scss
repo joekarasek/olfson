@@ -63,10 +63,9 @@
 #header {
 
   width: 100%;
-  font-family: $ff-mont;
+  font-family: $ff-open;
   font-weight: 700;
 
-  background-color: rgba($c-white, 0);
 
   #primary-menu-trigger {
     font-size: 30px;
@@ -74,57 +73,32 @@
   }
   #header-wrap {
     border-bottom: 0;
+    background-color: rgba($c-white, 1);
   }
   #logo {
     padding-right: 0;
     margin-right: 0px;
     border-right: none;
+    img {
+      padding-top: 20px;
+      padding-left: 40px;
+      height: auto !important;
+    }
   }
-
-  &:not(.sticky-header) #logo img:last-child {
-    visibility: none;
-    display: none;
-  }
-
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
 
-    @include nav-color(#626161);
-    @include nav-color(#E87400, 1);
-    @include nav-color($c-dark-blue, 2);
-    @include nav-color($c-beige, 3);
-  }
-  
-  //when you scroll down
-  &.sticky-header {
-    #header-wrap {
-      background-color: rgba($c-white,1);
-    }
-    #logo {
-      img:first-child {
-        visibility: none;
-        display: none;
-      }
-    }
-  }
-  @media (max-width: 991px) {
-    position: inherit;
-    &:not(.sticky-header) #logo img:last-child {
-      visibility: visible;
-      display: inline-block;
-    }
-    #logo img:first-child {
-      visibility: none;
-      display: none;
-    }
+    @include nav-color(#868686);
+    @include nav-color(#47607E, 1);
+    @include nav-color(#F09454, 2);
   }
 
   @media screen and (max-width: $width-md) {
     #logo {
       img {
         margin-right: 100%;
-        padding: $spacing-xs;
+        //padding: $spacing-xs;
       }
     }
     #primary-menu-trigger {
@@ -137,39 +111,24 @@
     }
   }
 
- @media screen and (min-width: $width-md - 1) {
-   &, #header-wrap, #logo img {
-     height: 120px;
-
-   }
-   &.sticky-header:not(.static-sticky), &.sticky-header:not(.static-sticky) &-wrap, &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-     height: 100px;
-   }
-   &.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
-     padding-top: 44px;
-     padding-bottom: 19px;
-   }
- }
-
-
 }
 
 #primary-menu ul li > a {
-  font-family: $ff-mont;
+  font-family: $ff-open;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-size: 17px;
-  padding: 56px 14px;
+  text-transform: none;
+  padding: 27px 14px;
   @media screen and (max-width: 1300px) {
     font-size: 16px;
-    padding: 56px 12px;
+    padding: 27px 12px;
     padding-bottom: 10px;
   }
   @media screen and (max-width: $width-lg) {
     font-size: 14px;
     letter-spacing: 0.7px;
-    padding: 56px 8px;
+    padding: 27px 8px;
     padding-bottom: 10px;
   }
   @media screen and (max-width: 1090px) {
