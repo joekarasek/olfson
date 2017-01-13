@@ -10,40 +10,35 @@
 
   .heading {
     text-align: center;
-
-    &--main {
-      color: $c-black-green;
-      font-family: $ff-mont;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: $spacing-xs;
+    h2{
+      font-family: $ff-roboto-condensed;
+      color: #4a6456;
+      font-weight: 300;
       span {
         @include h3;
-        font-weight: 700;
       }
     }
+  }
 
-    &--byline {
-      color: $c-teal;
-      font-family: $ff-great-vibes;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 0.5;
-    }
+  p {
+    font-family: $ff-lato;
+    color: #414b4d;
+    font-weight: 400;
+  }
 
-    &--break {
-      display: inline-block;
-      width: 200px;
-      border-bottom: 2px solid $c-breakline-grey;
-      margin-bottom: $spacing-md;
-    }
+  p.additional {
+    color: #545c5e;
+    font-style: italic;
+    font-family: $ff-lato;
   }
 
   .bio-image {
     text-align: center;
     @media screen and (max-width: $width-md) {
       margin-bottom: $spacing-md;
+    }
+    img {
+      border-radius: 45px;
     }
   }
 
