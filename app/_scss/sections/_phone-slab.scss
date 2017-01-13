@@ -1,0 +1,94 @@
+.phone-slab {
+
+  //fix to make it transparent
+
+  &:not(.phone-slab-2) {
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .text {
+    font-family: $ff-mont;
+    color: $c-red-grey;
+  }
+
+  .phone-number {
+    font-family: $ff-mont;
+    color: $c-red-grey;
+    font-weight: 900;
+    a:hover {
+      color: $c-red-grey !important;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-sm;
+    }
+    &--sub {
+      font-weight: 900;
+    }
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: $spacing-md;
+  }
+
+  .row {
+    @media screen and (min-width: $width-md+1) {
+    display: flex;
+    }
+    .btn {
+      @media screen and (min-width: $width-md+1) {
+        @include vertical-center();
+      }
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  h3,
+  h5,
+  h6 {
+    line-height: $lh-sm;
+    margin-bottom: 0;
+  }
+  h3 {
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-md;
+    }
+  }
+  .row:first-child {
+    padding-bottom: $spacing-sm;
+  }
+  &__left {
+    border-right: solid 2px #6c4117;
+    text-align: right;
+    margin-top: 5px;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      border-right: none;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
+  }
+  &__right {
+    text-align: left;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      margin-bottom: $spacing-sm;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
+  }
+
+
+}

@@ -1,0 +1,53 @@
+#section-certificates {
+  background-color: $c-associations;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
+
+  .owl-item {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top: 37px;
+    transform: translateY(-50%);
+    img {
+      width: inherit;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .association-item {
+    //text-align: center;
+  }
+}
+
+#section-links {
+  background-color: #CFD1CE;
+
+  .container {
+    position: relative;
+  }
+
+  .col-left {
+    a {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  img {
+    max-width: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $width-sm) {
+    .col-left {
+      a {
+        position: relative;
+      }
+    }
+    .col-left, .col-right {
+      text-align: center;
+    }
+  }
+}

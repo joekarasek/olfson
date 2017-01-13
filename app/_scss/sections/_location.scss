@@ -1,0 +1,122 @@
+#section-location {
+  position: relative;
+  
+  .location-card--wrapper {
+    background: rgba($c-white, 0.65);
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 40%;
+    
+    @media screen and (max-width: $width-md) {
+      position: relative;
+      width: 100%;
+    }
+  }
+  
+}
+
+.location-card {
+  margin: 30px 0;
+  border-radius: 0.1px;
+  font-family: $ff-lato;
+  z-index: 0;
+  @media (max-width: $width-md) {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  img {
+    width: 60%;
+    max-width: 400px;
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-sm;
+  }
+  p {
+    color: $c-grey-red;
+    font-family: $ff-lato;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 0.8;
+  }
+  h6 {
+    color: #3B5170;
+    font-family: $ff-lato;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: $lh-sm;
+  }
+  a>h6 {
+    padding-top: 30px;
+    font-family: $ff-lato;
+    padding-bottom: $spacing-md;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fa9322;
+  }
+  .phone-number {
+    line-height: $lh-sm;
+    color: $c-grey-red;
+    font-family: $ff-mont;
+    font-weight: 900;
+    margin-bottom: 0;
+    a:hover {
+      color: #3B5170 !important;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .phone-number-2 {
+    color: #575757;
+  }
+  .btn {
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-sm;
+  }
+  h6:last-child {
+    padding-bottom: $spacing-lg;
+  }
+}
+
+#google-map5 {
+  height: 700px;
+  @media (max-width: $width-md) {
+    height: 300px;
+  }
+}
+
+.hours-table {
+  //color: $c-grey-location;
+  padding-bottom: $spacing-md;
+  h5 {
+    color: $c-grey-red;
+    text-transform: uppercase;
+    font-family: $ff-lato;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 21px;
+  }
+  th {
+    width: 1px;
+    white-space: nowrap;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  table {
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+

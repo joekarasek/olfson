@@ -1,0 +1,139 @@
+#section-services {
+  position: relative;
+  .heading {
+    padding-top: 45px;
+    text-align: center;
+    h2 {
+      font-weight: 400;
+      font-family: $ff-great-vibes;
+      color: $c-teal;
+      margin-bottom: 15px;
+    }
+    p {
+      text-align: left;
+      font-weight: 400;
+      font-size: 16px;
+      color: $c-grey-red;
+      font-family: $ff-open;
+    }
+  }
+
+  .services--main {
+
+    h3 {
+      color: $c-grey-red;
+      font-family: $ff-mont;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: $c-grey-red;
+      font-family: $ff-open;
+    }
+
+    .row {
+      position: relative;
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-md;
+    }
+
+    @media screen and (max-width: $width-md) {
+      img {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+
+    @media screen and (max-width: $width-sm) {
+      .hand-image {
+        width: 100%;
+        img {
+          max-width: 40%;
+          padding-top: 0;
+        }
+      }
+      .mobile-image {
+        img {
+          padding-top: 0;
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $width-sm - 1) {
+      .text-one {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+      .text-two {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+
+      .hand-image {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        img {
+          width: 30%;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+
+.services-carousel {
+  background-color: #cfd1ce;
+  .container-fluid {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .service-item {
+
+    a { @include link-color($c-grey-red); }
+
+    &--image {
+      @include hover-plus();
+    }
+
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $ff-mont;
+      font-weight: 700;
+      padding-top: 15px;
+      @include font-size(18px, 14px, 15px, 14px, 14px);
+    }
+  }
+}
+
+.service-modal-wrapper {
+  & .modal-title {
+    @include h3;
+    font-family: $ff-mont;
+    font-weight: 700;
+    color: $c-grey-red;
+    padding-top: 10px;
+  }
+  & p {
+    color: $c-grey-red;
+    padding-bottom: 15px;
+  }
+  .modal-image {
+    text-align: center;
+    @media screen and (max-width: $width-md) {
+      display: none;
+    }
+  }
+  img {
+    max-width: 270px;
+    padding-bottom: 20px;
+  }
+}

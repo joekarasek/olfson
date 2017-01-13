@@ -1,0 +1,148 @@
+#section-specials {
+
+    background-image: url('/assets/specials-winter.jpg');
+    @include parallax-background;
+
+
+  .heading {
+
+    padding-bottom: $spacing-xl;
+    padding-top: $spacing-xl;
+
+    &--lead {
+      font-family: $ff-great-vibes;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    &--main {
+      font-family: $ff-mont;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $c-grey-red;
+      margin-bottom: $spacing-sm;
+    }
+    hr {
+      width: 200px;
+      border-top-color: grey;
+    }
+    h3 {
+      color: $c-white;
+      font-family: $ff-open;
+      margin-bottom: 0;
+      line-height: $lh-sm;
+      font-weight: 400;
+    }
+  }
+
+  .card {
+    //height fix
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba($c-white, 0);
+    text-align: center;
+    height: 100%;
+    border-radius: 0.1px;
+    color: $c-white;
+
+
+    .top {
+      height: 180px;
+      border-bottom: 5px solid rgba(255, 255, 255, 0);
+      .price {
+        position: relative;
+        display: inline-block;
+        border-radius: 6px;
+        border: solid 3px white;
+        height: 150px;
+        width: 150px;
+      }
+      h1 {
+        color: $c-white;
+        margin-bottom: 0;
+        padding: $spacing-sm;
+        padding-top: $spacing-md;
+        line-height: $lh-xs;
+        font-family: $ff-mont;
+        font-weight: 700;
+        font-size: 84px !important;
+        &:before {
+          font-family: $ff-lato;
+          content: '$';
+          font-size: 36px;
+          font-weight: 300;
+          position: absolute;
+          top: $spacing-md;
+          left: 2px;
+        }
+      }
+      h3 {
+        font-family: $ff-mont;
+        color: $c-white;
+        margin-bottom: 0;
+        line-height: $lh-xs;
+        padding-top: $spacing-md;
+        @include font-size(30px, 30px, 25px, 30px, 30px);
+        font-weight: 100;
+        padding-bottom: $spacing-sm;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 5px;
+      height: 100%;
+
+      background-color: rgba($c-white, 1);
+      // Savings
+      h6:first-child {
+        padding-top: 80px;
+        text-transform: uppercase;
+        @include h5;
+        font-family: $ff-lato;
+        font-weight: 400;
+      }
+      .copy {
+        font-family: $ff-open;
+        padding-left: $spacing-sm;
+        padding-right: $spacing-sm;
+        color: $c-grey-red-4;
+        font-weight: 400;
+        margin-bottom: 80px;
+      }
+      p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        padding-bottom: $spacing-sm;
+        color: $c-grey-red-4;
+      }
+    }
+  }
+  .card-1 .price {  background-color: $c-card1;  }
+  .card-2 .price {  background-color: $c-card2;  }
+  .card-3 .price {  background-color: $c-card3;  }
+  .card-1 .bottom h6:first-child {  color: $c-card1;  }
+  .card-2 .bottom h6:first-child {  color: $c-card2;  }
+  .card-3 .bottom h6:first-child {  color: $c-card3;  }
+  .card-1 .top {  background-color: #4DCEED;  }
+  .card-2 .top {  background-color: #AD9C2A;  }
+  .card-3 .top {  background-color: #F38400;  }
+
+  .row {
+    display: flex;
+    padding-bottom: $spacing-xl;
+    @media screen and (max-width: $width-sm) {
+      display: block;
+      .card {
+        margin-bottom: $spacing-md;
+      }
+    }
+  }
+}
