@@ -10,6 +10,7 @@
       margin-bottom: 0;
     }
     p {
+      text-align: left;
       font-family: $ff-open;
       color: #ffffff;
       font-weight: 400;
@@ -22,13 +23,15 @@
 
   .cerec {
     position: relative;
-
+    background-image: url("/assets/services/cerec.jpg");
+    @media screen and (max-width: $width-md) {
+      background-image: none;
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
     &--text {
-      @media screen and (min-width: 992px) {
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
       h2 {
         margin-top: $spacing-md;
         color: #4a6456;
@@ -107,7 +110,12 @@
       font-weight: 400;
       color: #536c5e;
       padding-top: 15px;
+      margin-bottom: 0;
       @include font-size(18px, 14px, 15px, 14px, 14px);
+    }
+    p {
+      font-size: 12px;
+      text-align: center;
     }
   }
 }

@@ -3,7 +3,12 @@
   &:not(.phone-slab-2) {
     background: radial-gradient(#ffffff, #C9CFC4);
   }
-  //fix to make it transparent
+
+  &.phone-slab-2 {
+    @media screen and (max-width: $width-sm) {
+      background: radial-gradient(#ffffff, #C9CFC4);
+    }
+  }
 
   h6 {
     font-family: $ff-open;
